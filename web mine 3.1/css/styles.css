@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000 !important;
+    background-image: url();
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+header {
+    background-color: #171615;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1; /* To keep the header above the content */
+}
+
+.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+    
+}
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    flex: 1;
+    text-align: center; /* Центрирование содержимого по горизонтали */
+}
+
+.logo-container img {
+    display: inline-block; /* Разрешает использование text-align для центрирования */
+    vertical-align: middle; /* Центрирование по вертикали */
+    margin: 0 auto; /* Автоматический отступ слева и справа для центрирования */
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Add transition for smooth color change */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 13px;
+
+}
+
+.menu a:hover {
+    color: #a0e080; /* Change color to green when hovering */
+}
+
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 195px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: 'Russo One', sans-serif;
+}
+
+.dropdown-content button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background: none;
+    color: #a0e080;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    white-space: nowrap;
+    border-bottom: 1px solid #fff;
+}
+
+.dropdown-content button img {
+    margin-right: 10px;
+}
+
+.dropdown-content button:hover {
+    background-color: #a0e080;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    margin: 0px -13px;
+}
+
+.login {
+    margin: 0 64px;
+}
+
+.login button {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Russo One', sans-serif;
+
+}
+
+.login button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Добавляем новый класс для центрирования элементов */
+.center_h2 {
+    text-align: center;
+    color: #fff; /* Цвет текста по вашему выбору */
+    margin-top: 50px; /* Регулируем верхний отступ по вашему усмотрению */
+    width: calc(100% - 57%);
+    margin-left: auto; /* Центрируем по горизонтали */
+    margin-right: auto; /* Центрируем по горизонтали */
+    
+}
+
+.center_p {
+    text-align: center;
+    color: #fff; /* Цвет текста по вашему выбору */
+    margin-top: 10px; /* Регулируем верхний отступ по вашему усмотрению */
+    width: calc(100% - 57%);
+    margin-left: auto; /* Центрируем по горизонтали */
+    margin-right: auto; /* Центрируем по горизонтали */
+    
+}
+
+h2 {
+    font-size: 24px; /* Размер шрифта 24 пикселя */
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    letter-spacing: -.015em;
+    margin: 0px 0px;
+    font-family: 'Russo One', sans-serif !important; 
+}
+
+#carouselExampleDark {
+    width: 50%; /* Задайте нужное значение ширины */
+    margin: 50px auto; /* Центрирование по горизонтали */
+}
+
+.carousel-caption {
+    color: white !important ; /* Устанавливаем белый цвет текста */
+}
+
+
+
+
+.center_h22 {
+    text-align: center;
+    color: #000000; /* Цвет текста по вашему выбору */
+    margin-top: 50px; /* Регулируем верхний отступ по вашему усмотрению */
+    width: calc(100% - 57%);
+    margin-left: auto; /* Центрируем по горизонтали */
+    margin-right: auto; /* Центрируем по горизонтали */
+    text-transform: uppercase;
+    
+}
+
+
+.back2 {
+    padding: 5rem 4.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+
+    @media (max-width: 830px) {
+
+        .menu { display: none;
+    
+        }
+
+
+        .center_h2,
+        .center_p {
+          margin-top: 30px; /* Уменьшаем верхний отступ */
+          width: calc(100% - 30px); /* Уменьшаем ширину */
+        }
+      
+        h2 {
+          font-size: 18px; /* Уменьшаем размер шрифта */
+          line-height: 2.5rem; /* Уменьшаем высоту строки */
+          letter-spacing: -.01em; /* Уменьшаем расстояние между буквами */
+        }
+      
+        #carouselExampleDark {
+          width: 70%; /* Уменьшаем ширину карусели */
+          margin: 30px auto; /* Уменьшаем отступ сверху и центрируем по горизонтали */
+        }
+      
+        .back2 {
+          padding: 3rem 2.5rem; /* Уменьшаем отступы */
+        }
+        
+        .youtube-container iframe {
+            width: 70%; /* Уменьшаем ширину видео на 30% */
+            margin: 0 auto;
+        }
+
+      }
+      
+

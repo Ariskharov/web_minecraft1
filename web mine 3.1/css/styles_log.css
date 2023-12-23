@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url();
+    background-size: cover;
+    background-position: top;
+    
+}
+
+
+
+header {
+    background-color: #171615;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    position: top;
+    width: 100%;
+    z-index: 1; /* To keep the header above the content */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    flex: 1;
+    text-align: center; /* Центрирование содержимого по горизонтали */
+}
+
+.logo-container img {
+    display: inline-block; /* Разрешает использование text-align для центрирования */
+    vertical-align: middle; /* Центрирование по вертикали */
+    margin: 0 auto; /* Автоматический отступ слева и справа для центрирования */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Add transition for smooth color change */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 13px;
+}
+
+.menu a:hover {
+    color: #a0e080; /* Change color to green when hovering */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 195px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: 'Russo One', sans-serif;
+}
+
+.dropdown-content button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background: none;
+    color: #a0e080;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    white-space: nowrap;
+    border-bottom: 1px solid #fff;
+}
+
+.dropdown-content button img {
+    margin-right: 10px;
+}
+
+.dropdown-content button:hover {
+    background-color: #a0e080;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    margin: 0px -13px;
+
+}
+
+.form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.button_log {
+    background-color: #45a049;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
