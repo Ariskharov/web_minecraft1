@@ -3,24 +3,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000 !important;
+    background-image: url();
     background-size: cover;
     background-position: top;
 }
 
-.overlay {
-    position: absolute;
-    top: 300px;
-    left: 25%;
-    width: 50%;
-    height: 40%;
-    z-index: 0; /* Устанавливаем высший z-индекс, чтобы фиксированное изображение находилось поверх фона */
-}
 
-.overlay img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
 header {
     background-color: #171615;
@@ -136,8 +124,8 @@ nav {
 }
 
 .login button {
-    background-color: #4caf50;
-    color: white;
+    background-color: #acf2ff;
+    color: rgb(0, 0, 0);
     padding: 5px 15px;
     border: none;
     border-radius: 4px;
@@ -147,7 +135,7 @@ nav {
 }
 
 .login button:hover {
-    background-color: #45a049;
+    background-color: #bcf4ff;
 }
 
 
@@ -167,20 +155,24 @@ nav {
     text-align: center;
     color: #fff; /* Цвет текста по вашему выбору */
     margin-top: 10px; /* Регулируем верхний отступ по вашему усмотрению */
-    width: calc(100% - 42%);
+    width: calc(100% - 32%);
     margin-left: auto; /* Центрируем по горизонтали */
     margin-right: auto; /* Центрируем по горизонтали */
     
 }
 
 h2 {
-    font-family: 'Russo One', sans-serif 
+    font-size: 24px; /* Размер шрифта 24 пикселя */
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    letter-spacing: -.015em;
+    margin: 0px 0px;
+    font-family: 'Russo One', sans-serif !important; 
 }
 
 #carouselExampleDark {
-    width: 70%; /* Задайте нужное значение ширины */
+    width: 50%; /* Задайте нужное значение ширины */
     margin: 50px auto; /* Центрирование по горизонтали */
-   
 }
 
 .carousel-caption {
@@ -189,14 +181,6 @@ h2 {
 
 
 
-.main1 {
-    background-image: url(../img/fonn.jpg);
-    background-size: cover; /* Заполнение фона по размерам контейнера */
-    background-position: left; /* Выравнивание фона по центру */
-    background-repeat: no-repeat; /* Запрет повторения фона */
-    padding: 0px; /* Подберите подходящий вам внутренний отступ */
-    color: #fff; /* Цвет текста на фоне */
-}
 
 .center_h22 {
     text-align: center;
@@ -213,7 +197,7 @@ h2 {
 .back2 {
     padding: 0 0;
     max-width: 100%;
-    margin: -50px auto;
+    margin: 0 auto;
     background-color: #fff;
     text-align: center;
 }
@@ -317,3 +301,4 @@ footer p {
 
       }
       
+
